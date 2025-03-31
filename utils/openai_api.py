@@ -92,7 +92,7 @@ def extract_parameters(prompt: str, function_definitions_llm):
 
 # Example usage
 queries = [
-    "Send a HTTPS request to https://httpbin.org/get with the URL encoded parameter email set to 23f2005217@ds.study.iitm.ac.in",
+    "Send a HTTPS request to https://httpbin.org/get with the URL encoded parameter email set to 23f3001208@ds.study.iitm.ac.in",
     # "Run npx -y prettier@3.4.2 README.md | sha256sum.",
     # "Type this formula in Google Sheets: =SUM(ARRAY_CONSTRAIN(SEQUENCE(100, 100, 15, 12), 1, 10))",
 ]

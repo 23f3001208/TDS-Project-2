@@ -62,7 +62,7 @@ questions = [
     """Install and run Visual Studio Code. In your Terminal (or Command Prompt), type code -s and press Enter. Copy and paste the entire output below.
     What is the output of code -s?""",
     """Running uv run --with httpie -- https [URL] installs the Python package httpie and sends a HTTPS request to the URL.
-    Send a HTTPS request to https://httpbin.org/get with the URL encoded parameter email set to 23f2005217@ds.study.iitm.ac.in
+    Send a HTTPS request to https://httpbin.org/get with the URL encoded parameter email set to 23f3001208@ds.study.iitm.ac.in
     What is the JSON output of the command? (Paste only the JSON body, not the headers)""",
     """Let's make sure you know how to use npx and prettier.
     Download . In the directory where you downloaded it, make sure it is called README.md, and run npx -y prettier@3.4.2 README.md | sha256sum.
@@ -94,7 +94,7 @@ questions = [
     data3.txt: Tab-separated file encoded in UTF-16
     Each file has 2 columns: symbol and value. Sum up all the values where the symbol matches ‚ OR ˆ OR ‡ across all three files.
     What is the sum of all values associated with these symbols?""",
-    """Let's make sure you know how to use GitHub. Create a GitHub account if you don't have one. Create a new public repository. Commit a single JSON file called email.json with the value {"email": "23f2005217@ds.study.iitm.ac.in"} and push it.
+    """Let's make sure you know how to use GitHub. Create a GitHub account if you don't have one. Create a new public repository. Commit a single JSON file called email.json with the value {"email": "23f3001208@ds.study.iitm.ac.in"} and push it.
     Enter the raw Github URL of email.json so we can verify it. (It might look like https://raw.githubusercontent.com/[GITHUB ID]/[REPO NAME]/main/email.json.)""",
     """Download  and unzip it into a new folder, then replace all "IITM" (in upper, lower, or mixed case) with "IIT Madras" in all files. Leave everything as-is - don't change the line endings.
     What does running cat * | sha256sum in that folder show in bash?""",
@@ -134,13 +134,13 @@ Enter your Markdown here:""",
 By losslessly, we mean that every pixel in the new image should be identical to the original image.
 Upload your losslessly compressed image (less than 1,500 bytes)
     """,
-    """ Publish a page using GitHub Pages that showcases your work. Ensure that your email address 23f2005217@ds.study.iitm.ac.in is in the page's HTML.
+    """ Publish a page using GitHub Pages that showcases your work. Ensure that your email address 23f3001208@ds.study.iitm.ac.in is in the page's HTML.
 GitHub pages are served via CloudFlare which obfuscates emails. So, wrap your email address inside a:
-<!--email_off-->23f2005217@ds.study.iitm.ac.in<!--/email_off-->
+<!--email_off-->23f3001208@ds.study.iitm.ac.in<!--/email_off-->
 What is the GitHub Pages URL? It might look like: https://[USER].github.io/[REPO]/
 If a recent change that's not reflected, add ?v=1, ?v=2 to the URL to bust the cache.
     """,
-    """ Let's make sure you can access Google Colab. Run this program on Google Colab, allowing all required access to your email ID: 23f2005217@ds.study.iitm.ac.in.
+    """ Let's make sure you can access Google Colab. Run this program on Google Colab, allowing all required access to your email ID: 23f3001208@ds.study.iitm.ac.in.
 import hashlib
 import requests
 from google.colab import auth
@@ -177,17 +177,17 @@ Create and deploy a Python app to Vercel. Expose an API so that when a request l
 { "marks": [10, 20] }
 Make sure you enable CORS to allow GET requests from any origin.
 What is the Vercel URL? It should look like: https://your-app.vercel.app/api """,
-    """ Create a GitHub action on one of your GitHub repositories. Make sure one of the steps in the action has a name that contains your email address 23f2005217@ds.study.iitm.ac.in. For example:
+    """ Create a GitHub action on one of your GitHub repositories. Make sure one of the steps in the action has a name that contains your email address 23f3001208@ds.study.iitm.ac.in. For example:
 jobs:
   test:
     steps:
-      - name: 23f2005217@ds.study.iitm.ac.in
+      - name: 23f3001208@ds.study.iitm.ac.in
         run: echo "Hello, world!"
 Trigger the action and make sure it is the most recent action.
 What is your repository URL? It will look like: https://github.com/USER/REPO
     """,
     """
-    Create and push an image to Docker Hub. Add a tag named 23f2005217 to the image.
+    Create and push an image to Docker Hub. Add a tag named 23f3001208 to the image.
 What is the Docker image URL? It should look like: https://hub.docker.com/repository/docker/$USER/$REPO/general """,
     """ Download . This file has 2-columns:
 studentId: A unique identifier for each student, e.g. 1, 2, 3, ...
@@ -272,8 +272,8 @@ Write your JSON body here:
     """
     SecurePay, a leading fintech startup, has implemented an innovative feature to detect and prevent fraudulent activities in real time. As part of its security suite, the system analyzes personalized transaction messages by converting them into embeddings. These embeddings are compared against known patterns of legitimate and fraudulent messages to flag unusual activity.
 Imagine you are working on the SecurePay team as a junior developer tasked with integrating the text embeddings feature into the fraud detection module. When a user initiates a transaction, the system sends a personalized verification message to the user's registered email address. This message includes the user's email address and a unique transaction code (a randomly generated number). Here are 2 verification messages:
-Dear user, please verify your transaction code 65889 sent to 23f2005217@ds.study.iitm.ac.in
-Dear user, please verify your transaction code 42512 sent to 23f2005217@ds.study.iitm.ac.in
+Dear user, please verify your transaction code 65889 sent to 23f3001208@ds.study.iitm.ac.in
+Dear user, please verify your transaction code 42512 sent to 23f3001208@ds.study.iitm.ac.in
 The goal is to capture this message, convert it into a meaningful embedding using OpenAI's text-embedding-3-small model, and subsequently use the embedding in a machine learning model to detect anomalies.
 Your task is to write the JSON body for a POST request that will be sent to the OpenAI API endpoint to obtain the text embedding for the 2 given personalized transaction verification messages above. This will be sent to the endpoint https://api.openai.com/v1/embeddings.
 Write your JSON body here:
@@ -595,7 +595,7 @@ We'll check by sending a request to this URL with ?country=... passing different
     Create a scheduled GitHub action that runs daily and adds a commit to your repository. The workflow should:
 
     Use schedule with cron syntax to run once per day (must use specific hours/minutes, not wildcards)
-    Include a step with your email 23f2005217@ds.study.iitm.ac.in in its name
+    Include a step with your email 23f3001208@ds.study.iitm.ac.in in its name
     Create a commit in each run
     Be located in .github/workflows/ directory
     After creating the workflow:

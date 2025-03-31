@@ -1,15 +1,17 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "main.py",
-      "use": "@vercel/python"
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/*.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "env": {
+      "AIPROXY_TOKEN": "@AIPROXY_TOKEN",
+      "DOCKER_USERNAME": "@DOCKER_USERNAME",
+      "DOCKER_PASSWORD": "@DOCKER_PASSWORD",
+      "GITHUB_TOKEN": "@GITHUB_TOKEN",
+      "GITHUB_ACTION_TOKEN": "@GITHUB_ACTION_TOKEN"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "main.py"
-    }
-  ]
-}
+  }
+  
